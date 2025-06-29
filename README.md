@@ -1,9 +1,11 @@
 # Dijkstra's Algorithm for Shortest Path Search
-Overview
+## Overview
 
 This Python code implements Dijkstra's algorithm to find the shortest path between two nodes in a weighted graph. The algorithm is defined by three main functions: chemin, actualiser, and graf.
+
 Functions
-chemin(t, s, fin)
+
+## chemin(t, s, fin)
 
 This function takes three arguments:
 
@@ -14,7 +16,7 @@ This function takes three arguments:
     fin: Ending node.
     It returns the shortest path between the starting node and the ending node.
 
-actualiser(v, t, e, w, y)
+## actualiser(v, t, e, w, y)
 
 This function updates the minimum distance table. It takes five arguments:
 
@@ -29,7 +31,7 @@ This function updates the minimum distance table. It takes five arguments:
     y: Index of the current node.
     It returns the updated table, the index of the node with the minimum distance, and this minimum distance.
 
-graf(s, v, e, fin)
+## graf(s, v, e, fin)
 
 This function implements Dijkstra’s algorithm to find the shortest path between a starting node s and an ending node fin. It takes four arguments:
 
@@ -45,6 +47,7 @@ This function implements Dijkstra’s algorithm to find the shortest path betwee
 Turtle Graphical Interface
 
 A graphical interface is implemented using the turtle module.
-Conclusion
+
+## Conclusion
 
 The code returns the minimum distance between two specified nodes along with the shortest path to achieve this distance.
