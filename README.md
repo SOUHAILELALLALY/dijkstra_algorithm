@@ -1,49 +1,50 @@
-# Algorithme de Dijkstra pour la Recherche du Chemin le Plus Court
+# Dijkstra's Algorithm for Shortest Path Search
+Overview
 
-## Overview
+This Python code implements Dijkstra's algorithm to find the shortest path between two nodes in a weighted graph. The algorithm is defined by three main functions: chemin, actualiser, and graf.
+Functions
+chemin(t, s, fin)
 
-Ce code Python est une implémentation de l'algorithme de Dijkstra pour trouver le chemin le plus court entre deux nœuds dans un graphe pondéré. L'algorithme est défini par trois fonctions principales : `chemin`, `actualiser`, et `graf`.
+This function takes three arguments:
 
-## Fonctions
+    t: An array of tuples containing the minimum distance, the previous node, and the current node.
 
-### `chemin(t, s, fin)`
+    s: Starting node.
 
-Cette fonction prend trois arguments :
+    fin: Ending node.
+    It returns the shortest path between the starting node and the ending node.
 
-- `t` : Tableau de tuples contenant la distance minimale, le nœud précédent et le nœud actuel.
-- `s` : Nœud de départ.
-- `fin` : Nœud de fin.
+actualiser(v, t, e, w, y)
 
-Elle retourne le chemin le plus court entre le nœud de départ et le nœud de fin.
+This function updates the minimum distance table. It takes five arguments:
 
-### `actualiser(v, t, e, w, y)`
+    v: List of nodes.
 
-Cette fonction met à jour la table des distances minimales. Elle prend cinq arguments :
+    t: Array of tuples.
 
-- `v` : Liste des nœuds.
-- `t` : Tableau de tuples.
-- `e` : Dictionnaire des arêtes.
-- `w` : Liste de toutes les lignes de la table.
-- `y` : Indice du nœud actuel.
+    e: Dictionary of edges.
 
-Elle retourne la table mise à jour, l'indice du nœud avec la distance minimale et cette distance minimale.
+    w: List of all rows in the table.
 
-### `graf(s, v, e, fin)`
+    y: Index of the current node.
+    It returns the updated table, the index of the node with the minimum distance, and this minimum distance.
 
-Cette fonction implémente l'algorithme de Dijkstra pour trouver le chemin le plus court entre un nœud de départ `s` et un nœud de fin `fin`. Elle prend quatre arguments :
+graf(s, v, e, fin)
 
-- `s` : Nœud de départ.
-- `v` : Liste des nœuds.
-- `e` : Dictionnaire des arêtes.
-- `fin` : Nœud de fin.
+This function implements Dijkstra’s algorithm to find the shortest path between a starting node s and an ending node fin. It takes four arguments:
 
-Elle retourne la distance minimale entre `s` et `fin` ainsi que le chemin le plus court.
+    s: Starting node.
 
-## Interface Graphique Turtle
+    v: List of nodes.
 
-Une interface graphique est implémentée avec `turtle`.
+    e: Dictionary of edges.
 
+    fin: Ending node.
+    It returns the minimum distance between s and fin as well as the shortest path.
 
-## Conclusion
+Turtle Graphical Interface
 
-Le code retourne la distance minimale entre deux nœuds spécifiés ainsi que le chemin le plus court pour atteindre cette distance.
+A graphical interface is implemented using the turtle module.
+Conclusion
+
+The code returns the minimum distance between two specified nodes along with the shortest path to achieve this distance.
